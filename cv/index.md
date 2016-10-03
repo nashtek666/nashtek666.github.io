@@ -5,7 +5,7 @@ title: Curriculum vitae de Alfredo García
 
 # Curriculum Vitae de Alfredo García
 (Este curriculum es una actividad escolar)
-![alt text]({{ site.url }}images/photo.png?raw_true "Este soy yo")
+![alt text](../images/photo.png?raw_true "Este soy yo")
 
 ### Alfredo García García
 Técnico Superior Administración de Sistemas Informáticos en Red (Fecha fin: curso 2056)
