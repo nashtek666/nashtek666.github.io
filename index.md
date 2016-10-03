@@ -12,6 +12,7 @@ Técnico Superior Administración de Sistemas Informáticos en Red (Fecha fin: c
 
 #### Formación Técnica
 - Programación
+
 1. Nivel Experto.
     * Jedi Haskell
     * C#
@@ -36,10 +37,15 @@ Técnico Superior Administración de Sistemas Informáticos en Red (Fecha fin: c
     2. Vxlan
 
 #### Experiencia Laboral
-
++ 1997 - 2005: RedHat. Becario.
++ 2005 - 2010: Suse Linux. Becario.
++ 2010 - Actualmente: Jefe de proyectos de seguridad informática en Microsoft.
 
 #### Idiomas
-Idioma 1 – Nivel A1, A2, B1, B2, C1, C2
+* Interlingua - C2
+* Francés – Nivel C2
+* Arameo - B1
+* Inglés – Nivel A1
 
 #### Cursos
 [Estudios realizados anteriormente, cursos de formación,...]
