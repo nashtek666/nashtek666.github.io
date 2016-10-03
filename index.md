@@ -12,25 +12,25 @@ Técnico Superior Administración de Sistemas Informáticos en Red (Fecha fin: c
 
 #### Formación Técnica
 - Programación
-    1. Nivel Experto.
-        * Jedi Haskell
-        * C#
-        * Java
-    2. Nivel Avanzado.
-        * Basic
-        * Cobol
-        * Clipper
-    3. Nivel Intermedio.
-        * ORCAD VHDL
-        * MatLab
-        * ASM i8086
-    4. Nivel básico.
-        * python
-        * bash
-        * perl
-        * sed
-        * plsql
-        * plpgsql
+1. Nivel Experto.
+    * Jedi Haskell
+    * C#
+    * Java
+2. Nivel Avanzado.
+    * Basic
+    * Cobol
+    * Clipper
+3. Nivel Intermedio.
+    * ORCAD VHDL
+    * MatLab
+    * ASM i8086
+4. Nivel básico.
+    * python
+    * bash
+    * perl
+    * sed
+    * plsql
+    * plpgsql
 - Administración nivel básico
     1. Vlans
     2. Vxlan
