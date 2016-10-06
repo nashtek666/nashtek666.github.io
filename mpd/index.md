@@ -48,6 +48,7 @@ Depende del sistema operativo se hará de una forma o de otra pero no debería s
 ```
 
 - Archlinux
+
 ```
 # pacman -S ncmpcpp
 ```
