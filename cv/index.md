@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: index
 title: Curriculum vitae de Alfredo García
 ---
 
