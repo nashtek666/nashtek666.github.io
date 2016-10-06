@@ -3,9 +3,10 @@ layout: index
 title: Mi página personal
 ---
 
-## Esta página es un ejercicio sobre usar jekyll en github pages
-(todos los datos son inventados, cualquier coincidencia con la realidad es pura coincidencia)
+# Página de nasshtek666
 
-.
+## Sitios accesibles
 
-..
+[Curriculum vitae](https://nashtek666.github.io/cv/)
+
+[Instalación y configuración de MPD](https://nashtek666.github.io/mpd/)
