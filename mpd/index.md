@@ -28,13 +28,13 @@ Voy a destacar un par de ventajes que tiene el usar mpd.
 Depende del sistema operativo se hará de una forma o de otra pero no debería suponer un gran problema.
 
 - Debian/Ubuntu y derivados:
-~~~
+```
 # apt-get update && apt-get install mpd
-~~~
+```
 
 - Archlinux
-~~~
+```
 # pacman -Syy && pacman -S mpd
-~~~
+```
 
 
