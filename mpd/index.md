@@ -39,4 +39,151 @@ Depende del sistema operativo se hará de una forma o de otra pero no debería s
 # pacman -Syy && pacman -S mpd
 ```
 
+### Instalación del cliente _ncmpcpp_
+
+- Debian
+
+```
+# apt-get install ncmpcpp
+```
+
+- Archlinux
+```
+# pacman -S ncmpcpp
+```
+
+## Configuración de MPD
+
+Crear el fichero __~/.mpd/mpd.conf__ con el siguiente contenido:
+
+```
+# Estas rutas de ficheros y de directorios hay que crearlas a mano
+
+# Ruta a nuestra biblioteca de música
+music_directory     "~/music/"
+
+playlist_directory  "~/.mpd/playlist"
+
+pid_file            "~/.mpd/mpd.pid"
+db_file             "~/.mpd/mpd.db"
+state_file          "~/.mpd/mpdstate"
+log_file            "~/.mpd/log"
+sticker_file        "~/.mpd/sticker.sql"
+
+# aquí se puede especificar por que interfaz escuchar
+bind_to_address     "any"
+
+# Con esta línea podemos usar ncmpcpp a modo de navegador de archivos
+bind_to_address     "~/.mpd/socket"
+
+# puerto de escucha del demonio mpd
+port                "6600"
+
+# nivel de log
+log_level           "default"
+
+input {
+    plugin "curl"
+}
+
+### Líneas opcionales
+#####################
+
+# restaurar por donde se quedó al reiniciar mpd
+restore_paused      "no"
+
+# no hace falta decir para qué es esto
+save_absolute_paths_in_playlists "no"
+
+# no hace falta decir para qué es esto
+auto_update             "yes"
+follow_outside_symlinks "yes"
+follow_inside_symlinks  "yes"
+
+# en caso de usar avahi en la LAN se puede configurar zeroconf
+zeroconf_enabled                "yes"
+zeroconf_name                   "MPD zhora"
+
+### Descomentar esta línea si se quioere password en la conexion
+# y poner el password que se quiera
+
+#password                       "password@read,add,control,admin"
+
+# Esta linea descomentada establece cuales son los privilegios para una conexion sin password
+#default_permissions            "read,add,control,admin"
+
+### FIN Líneas opcionales
+
+
+# configuración para emitir a un servidor icecast
+audio_output {
+    type        "shout"
+    encoding    "ogg"                               # optional
+    name        "Radio de pruebas"
+    host        "icecast.example.com"
+    port        "8000"
+    mount       "/example"
+    password    "hackme"
+    bitrate     "128"
+    #quality    "10"
+    format      "44100:16:2"
+    protocol    "icecast2"                          # optional
+    user        "myuser"                            # optional
+    description "Mi descripcion"                    # optional
+    url         "http://icecast.example.com"        # optional
+    genre       "varios"                            # optional
+    mixer_type  "software"                          # optional
+}
+
+# Salida a pulseaudio
+audio_output {
+    type "pulse"
+    name "My Pulse Output"
+}
+
+
+decoder  {
+    plugin "ffmpeg"
+    enabled "yes"
+}
+
+# Salida Alsa
+audio_output {
+    type "alsa"
+    name "My ALSA Device"
+    device "hw:0,0" # optional
+}
+```
+
+## Ejecución de MPD
+
+Por ahora solo explicaré como lanzarlo en modo usuario, de esta forma solo estará activo si iniciamos sesión con nuestro usuario.
+
+- Archlinux
+
+```
+$ systemctl --user enable mpd.service --now
+```
+
+- Debian
+
+```
+$ systemctl --user enable mpd.service
+$ systemctl --user start mpd.service
+```
+
+## Uso de ncmpcpp
+
+En la misma máquina donde estamos ejecutando mpd:
+
+```
+$ ncmpcpp
+```
+
+1. Para actualizar la base de datos de ncmpcpp pulsar __s__.
+
+2. Pulsar __F1__ para la ayuda.
+
+3. Con las teclas del __1__ al __8__ podremos ir pasando desde la lista de reproducción actual hasta la pantalla de selección de salida.
+
 
