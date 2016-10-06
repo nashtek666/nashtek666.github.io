@@ -180,7 +180,7 @@ En la misma máquina donde estamos ejecutando mpd:
 $ ncmpcpp
 ```
 
-1. Para actualizar la base de datos de ncmpcpp pulsar __s__.
+1. Para actualizar la base de datos de ncmpcpp pulsar __u__.
 
 2. Pulsar __F1__ para la ayuda.
 
